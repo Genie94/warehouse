@@ -1,0 +1,29 @@
+{
+  "name": "warehouse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "pnpm dlx only-allow pnpm",
+    "prepare": "husky install",
+    "test":"echo hello"
+  },
+  "engines": {
+    "node": ">=16.13.0",
+    "pnpm": ">=7.21.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "packageManager": "pnpm@7.21.0",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.4",
+    "husky": "^8.0.0"
+  }
+}
